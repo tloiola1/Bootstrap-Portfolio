@@ -1,13 +1,17 @@
 html, body{
 		font-family: 'Bitter', Arial, 'Georgia', Times, Times New Roman, serif !important;
+		margin-bottom: 0;
 		overflow-x: hidden;
 		height: 100%;
-		margin-bottom: 0;
 }
 
 .wrapper{
     min-height: 100%;
     margin: 0 auto -50px;
+}
+
+.navbar{
+	border-radius: 0;
 }
 
 .navbar-brand{
@@ -17,16 +21,19 @@ html, body{
 #tarciso{
 	border: 1px solid #ebebeb;
 }
+
 ul{
 	font-size: 20px;
 }
 
 .panel{
 	padding: 0 20px 20px 20px;
-
 }
+
 .page-header{
 	border-bottom: 3px solid #777 !important;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .bounce{
@@ -34,36 +41,29 @@ ul{
 	color: rgb(255,255,255);
 	border: 3px solid;
 }
+
 .bounce:hover{
 	border: .5px;
 }
 
-.portfolio-image{	
-		
-	}
-	#relative{
-		position: relative;
-	}
+#relative{
+	position: relative;
+}
 
-	#absolute{
-		text-align: center;
-		font-size: 24px;
-		padding: 10px 0;
-		position: absolute;
-		bottom: 20px;	
-		width: 100%;
-		color: #ebebeb;
-		background-color: #169e9e;
-	}
+#absolute{
+	color:  #169e9e;
+	bottom: 20px;
+}
 
-
-
-
-
+.portfolioImage{
+	width: 100%;
+	min-height: 260px;
+}
 
 .navbar-inverse{
 	border-top: 2px solid rgb(220,20,60) !important;
 }
+
 .footer, 
 .push{
 
@@ -73,12 +73,7 @@ ul{
 }
 
 
-
-
 @media only screen and ( max-width: 764px){
-	.panel{
-		margin-left: 20px;
-	}
 	.navbar-brand{
 		text-align: center;
 	}
@@ -88,9 +83,6 @@ ul{
 }
 
 @media only screen and ( max-width: 400px){
-	.panel{
-		margin-left: 20px;
-	}
 	h3 .header3{
 		text-align: left;
 	}
